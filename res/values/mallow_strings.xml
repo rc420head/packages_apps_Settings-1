@@ -55,4 +55,7 @@
     <string name="set">Set</string>
     <string name="color_default">Default</string>
 
+    <!-- Font size sample -->
+    <string name="font_size_sample">Sample</string>
+
 </resources>
