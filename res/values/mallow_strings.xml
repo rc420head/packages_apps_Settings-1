@@ -724,4 +724,8 @@
     <string name="recents_full_screen_title">Full screen</string>
     <string name="recents_full_screen_summary">Makes the recents screen go into immersive mode</string>
 
+    <!-- Status bar brightness control-->
+    <string name="status_bar_toggle_brightness">Brightness control</string>
+    <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
+
 </resources>
