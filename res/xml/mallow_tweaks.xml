@@ -19,4 +19,11 @@
     android:title="@string/mallow_tweaks_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <PreferenceScreen
+        android:key="battery_styles"
+        android:title="@string/battery_styles_title"
+        android:summary="@string/battery_styles_summary"
+        android:icon="@drawable/ic_settings_battery"
+        android:fragment="com.android.settings.mallow.BatteryStyles" />
+
 </PreferenceScreen>
