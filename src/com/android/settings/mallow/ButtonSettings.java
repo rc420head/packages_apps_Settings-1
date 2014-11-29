@@ -19,6 +19,7 @@ package com.android.settings.mallow;
 import com.android.internal.logging.MetricsLogger;
 
 import android.os.Bundle;
+import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.SwitchPreference;
@@ -32,8 +33,10 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
     private static final String VOLUME_ROCKER_WAKE = "volume_rocker_wake";
+    private static final String KEY_VOLBTN_MUSIC_CTRL = "volbtn_music_controls";
 
     private SwitchPreference mVolumeRockerWake;
+    private SwitchPreference mVolBtnMusicCtrl;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -47,6 +50,20 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         int volumeRockerWake = Settings.System.getInt(getContentResolver(),
                 VOLUME_ROCKER_WAKE, 0);
         mVolumeRockerWake.setChecked(volumeRockerWake != 0);
+
+        // volume music control
+        mVolBtnMusicCtrl = (SwitchPreference) findPreference(KEY_VOLBTN_MUSIC_CTRL);
+        mVolBtnMusicCtrl.setChecked(Settings.System.getInt(getContentResolver(),
+                Settings.System.VOLUME_MUSIC_CONTROLS, 1) != 0);
+        mVolBtnMusicCtrl.setOnPreferenceChangeListener(this);
+        try {
+            if (Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.VOLUME_ROCKER_WAKE) == 1) {
+                mVolBtnMusicCtrl.setEnabled(false);
+                mVolBtnMusicCtrl.setSummary(R.string.volume_button_toggle_info);
+            }
+        } catch (SettingNotFoundException e) {
+        }
     }
 
     @Override
@@ -57,6 +74,12 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(), VOLUME_ROCKER_WAKE,
                     value ? 1 : 0);
             return true;
+        } else if (preference == mVolBtnMusicCtrl) {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.VOLUME_MUSIC_CONTROLS,
+                    (Boolean) objValue ? 1 : 0);
+            return true;
+        }
         return false;
     }
 
