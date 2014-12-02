@@ -19,4 +19,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/recent_apps_title">
 
+	<com.android.settings.mallow.SystemSettingSwitchPreference
+        android:key="recents_show_search_bar"
+        android:title="@string/recents_show_searchbar"
+        android:summary="@string/recents_show_searchbar_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>

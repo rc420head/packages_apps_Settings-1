@@ -258,4 +258,8 @@
     <string name="recent_apps_title">Recent apps</string>
     <string name="recent_apps_summary">Hide search bar or view memory usage</string>
 
+    <!-- Recents search bar -->
+    <string name="recents_show_searchbar">Enable search bar</string>
+    <string name="recents_show_searchbar_summary">Show the search bar in the recents menu</string>
+
 </resources>
