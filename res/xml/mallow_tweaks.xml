@@ -81,4 +81,11 @@
         android:icon="@drawable/ic_settings_accessibility"
         android:fragment="com.android.settings.mallow.ScreenGestures" />
 
+    <PreferenceScreen
+        android:key="status_bar"
+        android:title="@string/status_bar_title"
+        android:summary="@string/status_bar_summary"
+        android:icon="@drawable/ic_sync_green_holo"
+        android:fragment="com.android.settings.mallow.StatusBar" />
+
 </PreferenceScreen>
