@@ -18,6 +18,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <!-- Battery Bar -->
+    <PreferenceScreen
+        android:key="battery_bar"
+        android:fragment="com.android.settings.mallow.BatteryBar"
+        android:title="@string/battery_bar"
+        android:layout="@layout/preference_mallow_batterybar" 
+        />
+
     <ListPreference
         android:key="status_bar_battery_style"
         android:title="@string/status_bar_battery_style_title"
