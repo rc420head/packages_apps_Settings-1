@@ -31,13 +31,16 @@
     <string name="sm_flags_default">None</string>
 
     <!-- Dashboard header -->
-    <string name="header_category_personalization">Personalization</string>
+    <string name="header_category_personalization">Personalize</string>
 
     <!-- Mallow tweaks -->
     <string name="mallow_tweaks_title">Mallow tweaks</string>
+    
+    <!-- Layers Manager -->
+    <string name="layers_manager_title">Layers manager</string>
 
-    <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
-    <string name="supersu_title">SuperSU</string>
+    <!-- Superuser -->
+    <string name="supersu_title">Superuser</string>
 
     <!-- Bluetooth settings. A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
     <string name="bluetooth_accept_all_files">Accept all file types</string>
