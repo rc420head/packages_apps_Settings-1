@@ -159,9 +159,16 @@
     <string name="screen_gestures_title">Screen gestures</string>  
     <string name="screen_gestures_summary">Use taps to sleep or wakup your device</string>
 
+    <!-- Double tap gestures -->
+    <string name="display_category_dtts_title">Double tap gestures</string>
+
     <!-- Double tap-to-sleep -->
     <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
     <string name="double_tap_to_sleep_summary">Double-tap on the status bar or top third and bottom shortcut area of the lock screen to turn off the display</string>
+
+    <!-- Double tap navbar to sleep -->
+    <string name="double_tap_sleep_nav_bar_title">Navigation bar</string>
+    <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
 
     <!-- Status bar -->
     <string name="status_bar_title">Status bar</string>
