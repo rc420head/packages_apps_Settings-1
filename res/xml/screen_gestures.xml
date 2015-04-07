@@ -18,6 +18,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <!-- Gesture anywhere -->
+    <PreferenceScreen
+        android:key="gesture_anywhere"
+        android:fragment="com.android.settings.gestureanywhere.GestureAnywhereSettings"
+        android:title="@string/gesture_anywhere_title"
+        android:layout="@layout/preference_mallow_gesture" 
+        />
+
     <PreferenceCategory
         android:key="category_dtts_options"
         android:title="@string/display_category_dtts_title" >
