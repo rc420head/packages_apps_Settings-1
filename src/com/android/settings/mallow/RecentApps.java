@@ -33,7 +33,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsLogger;
 
-public class RecentApp extends SettingsPreferenceFragment
+public class RecentApps extends SettingsPreferenceFragment
             implements OnPreferenceChangeListener  {
 
     private static final String SHOW_CLEAR_ALL_RECENTS = "show_clear_all_recents";
@@ -50,7 +50,7 @@ public class RecentApp extends SettingsPreferenceFragment
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.recents_settings);
+        addPreferencesFromResource(R.xml.recent_apps);
         ContentResolver resolver = getActivity().getContentResolver();
         PreferenceScreen prefSet = getPreferenceScreen();
 
