@@ -64,6 +64,9 @@
 
     <!-- Mallow tweaks -->
     <string name="mallow_tweaks_title">Mallow tweaks</string>
+    
+    <!-- Layers manager -->
+    <string name="bitsyko_layers">Layers manager</string>
 
     <!-- SuperSU header name -->
     <string name="supersu_title">SuperSU</string>
