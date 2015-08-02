@@ -33,6 +33,13 @@
         android:fragment="com.android.settings.mallow.ClockStyles" />
 
     <PreferenceScreen
+        android:key="lock_screen"
+        android:title="@string/lock_screen_title"
+        android:summary="@string/lock_screen_summary"
+        android:icon="@drawable/ic_settings_security"
+        android:fragment="com.android.settings.mallow.LockScreen" />
+
+    <PreferenceScreen
         android:key="screen_gestures"
         android:title="@string/screen_gestures_title"
         android:summary="@string/screen_gestures_summary"
