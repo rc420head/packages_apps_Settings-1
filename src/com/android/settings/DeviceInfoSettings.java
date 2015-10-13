@@ -76,7 +76,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_EQUIPMENT_ID = "fcc_equipment_id";
     private static final String PROPERTY_EQUIPMENT_ID = "ro.ril.fccid";
     private static final String KEY_DEVICE_FEEDBACK = "device_feedback";
-    private static final String KEY_TWISTED_VERSION = "twisted_version";
+    private static final String KEY_MALLOW_VERSION = "mallow_version";
     private static final String KEY_SM_AND = "sm_android";
     private static final String KEY_SM_FLAGS = "sm_flags";
 
@@ -127,13 +127,12 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         findPreference(KEY_BUILD_NUMBER).setEnabled(true);
         findPreference(KEY_KERNEL_VERSION).setSummary(getFormattedKernelVersion());
         setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
-        setValueSummary(KEY_TWISTED_VERSION, "ro.twisted.version");
+        setValueSummary(KEY_MALLOW_VERSION, "ro.mallow.version");
         findPreference(KEY_SM_AND).setEnabled(true);
         findPreference(KEY_SM_FLAGS).setEnabled(true);
         setValueSummary(KEY_SM_AND, "ro.sm.android");
         setValueSummary(KEY_SM_FLAGS, "ro.sm.flags");
 
-        
         if (!SELinux.isSELinuxEnabled()) {
             String status = getResources().getString(R.string.selinux_status_disabled);
             setStringSummary(KEY_SELINUX_STATUS, status);

@@ -92,13 +92,13 @@
                 android:summary="@string/sm_flags_default"
                 android:selectable="false" />
                 
-        <!-- Twisted firmware version -->
-        <Preference android:key="twisted_version"
+        <!-- Mallow firmware version -->
+        <Preference android:key="mallow_version"
                 style="?android:preferenceInformationStyle"
-                android:title="@string/twisted_version_title"
-                android:summary="@string/twisted_version_default"/>
+                android:title="@string/mallow_version_title"
+                android:summary="@string/mallow_version_default"/>
 
-        <!-- Twisted build date -->
+        <!-- Mallow build date -->
         <Preference android:key="build_date"
                 style="?android:preferenceInformationStyle"
                 android:title="@string/build_date"
