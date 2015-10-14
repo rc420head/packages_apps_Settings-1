@@ -156,6 +156,7 @@
     <string name="status_bar_clock_style_reset_message">Reset clock color?</string>
 
     <!-- Screen gestures -->
+    <string name="gestures_title">Gestures</string>
     <string name="screen_gestures_title">Screen gestures</string>  
     <string name="screen_gestures_summary">Use taps to sleep or wakup your device</string>
 
@@ -169,6 +170,10 @@
     <!-- Double tap navbar to sleep -->
     <string name="double_tap_sleep_nav_bar_title">Navigation bar</string>
     <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
+
+    <!-- Three finger screenshot gesture -->
+    <string name="three_finger_gesture">Three finger gesture</string>
+    <string name="three_finger_gesture_summary">Swipe three fingers downwards to take a screenshot</string>
 
     <!-- Status bar -->
     <string name="status_bar_title">Status bar</string>
