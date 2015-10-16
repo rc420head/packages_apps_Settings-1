@@ -227,4 +227,8 @@
     <string name="volume_rocker_wake_title">Volume rocker wake</string>
     <string name="volume_rocker_wake_summary">Pressing the volume keys will wake your device</string>
 
+    <!-- Wakeup on charge -->
+    <string name="wakeup_when_plugged_unplugged_title">Wakeup on charge</string>
+    <string name="wakeup_when_plugged_unplugged_summary">Wakeup device if charger is plugged/unplugged.</string>
+    
 </resources>
