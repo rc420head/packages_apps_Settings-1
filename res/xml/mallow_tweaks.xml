@@ -31,5 +31,12 @@
         android:summary="@string/clock_styles_summary"
         android:icon="@drawable/ic_settings_date_time"
         android:fragment="com.android.settings.mallow.ClockStyles" />
-        
+
+    <PreferenceScreen
+        android:key="screen_gestures"
+        android:title="@string/screen_gestures_title"
+        android:summary="@string/screen_gestures_summary"
+        android:icon="@drawable/ic_settings_accessibility"
+        android:fragment="com.android.settings.mallow.ScreenGestures" />
+
 </PreferenceScreen>
