@@ -88,4 +88,15 @@
         android:icon="@drawable/ic_settings_cellular"
         android:fragment="com.android.settings.mallow.StatusBar" />
 
+    <PreferenceScreen
+        android:key="systemuituner"
+        android:title="@string/systemuituner_title"
+        android:summary="@string/systemuituner_summary"
+        android:icon="@drawable/ic_systemui_tuner" >
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.systemui"
+            android:targetClass="com.android.systemui.tuner.TunerActivity" />
+    </PreferenceScreen>
+
 </PreferenceScreen>
