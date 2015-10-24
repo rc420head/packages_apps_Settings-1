@@ -155,4 +155,8 @@
     <string name="clock_date_format_custom">Custom java format</string>
     <string name="status_bar_clock_style_reset_message">Reset clock color?</string>
 
+    <!-- Screen gestures -->
+    <string name="screen_gestures_title">Screen gestures</string>  
+    <string name="screen_gestures_summary">Use taps to sleep or wakup your device</string>
+
 </resources>
