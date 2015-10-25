@@ -197,7 +197,7 @@
     <string name="reset_lockscreen_wallpaper">Lock screen cleared</string>
 
     <!-- Power menu -->
-    <string name="power_menu_title">Power menu</string>   
+    <string name="power_menu_title">Power menu</string>
     <string name="power_menu_summary">Alter order of menu or hide options</string>
 
     <!-- Power menu fragment -->
@@ -213,5 +213,9 @@
     <string name="power_menu_bug_report_title">Bug report</string>
     <string name="power_menu_sound_title">Sound panel</string>
     <string name="power_menu_bug_report_disabled">Bug reporting is disabled in development settings</string>
+
+    <!-- Navigation bar -->
+    <string name="navigation_bar_title">Navigation bar</string>
+    <string name="navigation_bar_summary">Change and modify your system navbar</string>
 
 </resources>
