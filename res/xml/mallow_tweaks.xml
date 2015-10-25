@@ -39,5 +39,12 @@
         android:summary="@string/sceen_gestures_summary"
         android:icon="@drawable/ic_fingerprint"
         android:fragment="com.android.settings.mallow.ScreenGestures" />
+        
+    <PreferenceScreen
+        android:key="status_bar"
+        android:title="@string/status_bar_title"
+        android:summary="@string/status_bar_summary"
+        android:icon="@drawable/ic_sysbar_quicksettings"
+        android:fragment="com.android.settings.mallow.StatusBar" />
 
 </PreferenceScreen>
