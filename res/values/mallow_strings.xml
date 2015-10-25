@@ -218,4 +218,8 @@
     <string name="navigation_bar_title">Navigation bar</string>
     <string name="navigation_bar_summary">Change and modify your system navbar</string>
 
+    <!-- Volume rocker -->
+    <string name="volume_rocker_title">Volume rocker</string>
+    <string name="volume_rocker_summary">Use volume to wake or control music</string>
+
 </resources>
