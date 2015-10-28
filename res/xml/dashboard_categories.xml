@@ -72,7 +72,7 @@
 
     </dashboard-category>
 
-    <!-- PERSONALIZATION -->
+    <!-- PERSONALIZE -->
     <dashboard-category
             android:id="@+id/device_personalization"
             android:title="@string/header_category_personalization" >
@@ -90,12 +90,11 @@
                 android:id="@+id/bitsyko_layers"
                 android:icon="@drawable/ic_bitsyko_layers"
                 android:title="@string/layers_manager_title">     
-            <intent
+        <intent
                 android:action="android.intent.action.MAIN"
                 android:targetPackage="com.lovejoy777.rroandlayersmanager"
                 android:targetClass="com.lovejoy777.rroandlayersmanager.menu" />
         </dashboard-tile>
-
     </dashboard-category>
 
     <!-- DEVICE -->

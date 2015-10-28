@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-     Copyright (C) 2015 MallowRom
+<!-- Copyright (C) 2015 MallowRom
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,8 +14,8 @@
      limitations under the License.
 -->
 <PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/mallow_tweaks_title"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <PreferenceScreen
@@ -44,7 +43,7 @@
         android:key="navigation_bar"
         android:title="@string/navigation_bar_title"
         android:summary="@string/navigation_bar_summary"
-        android:icon="@drawable/ic_settings_navigation"
+        android:icon="@drawable/ic_settings_notifications"
         android:fragment="com.android.settings.mallow.NavigationBar" />
 
     <PreferenceScreen
@@ -64,8 +63,8 @@
     <PreferenceScreen
         android:key="screen_gestures"
         android:title="@string/screen_gestures_title"
-        android:summary="@string/sceen_gestures_summary"
-        android:icon="@drawable/ic_fingerprint"
+        android:summary="@string/screen_gestures_summary"
+        android:icon="@drawable/ic_settings_accessibility"
         android:fragment="com.android.settings.mallow.ScreenGestures" />
 
     <PreferenceScreen

@@ -1,19 +1,3 @@
-﻿/*
- * Copyright (C) 2015 MallowRom
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
- 
 package com.android.settings.mallow;
 
 import com.android.internal.logging.MetricsLogger;
@@ -34,7 +18,7 @@ public class VolumeRocker extends SettingsPreferenceFragment implements
 
     private static final String VOLUME_ROCKER_WAKE = "volume_rocker_wake";
     private static final String KEY_VOLBTN_MUSIC_CTRL = "volbtn_music_controls";
-		
+
     private SwitchPreference mVolumeRockerWake;
     private SwitchPreference mVolBtnMusicCtrl;
 
@@ -50,18 +34,17 @@ public class VolumeRocker extends SettingsPreferenceFragment implements
         int volumeRockerWake = Settings.System.getInt(getContentResolver(),
                 VOLUME_ROCKER_WAKE, 0);
         mVolumeRockerWake.setChecked(volumeRockerWake != 0);
-        
+
         // volume music control
         mVolBtnMusicCtrl = (SwitchPreference) findPreference(KEY_VOLBTN_MUSIC_CTRL);
         mVolBtnMusicCtrl.setChecked(Settings.System.getInt(getContentResolver(),
                 Settings.System.VOLUME_MUSIC_CONTROLS, 1) != 0);
         mVolBtnMusicCtrl.setOnPreferenceChangeListener(this);
-
         try {
             if (Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.VOLUME_ROCKER_WAKE) == 1) {
                 mVolBtnMusicCtrl.setEnabled(false);
-		        mVolBtnMusicCtrl.setSummary(R.string.volume_button_toggle_info);
+                mVolBtnMusicCtrl.setSummary(R.string.volume_button_toggle_info);
             }
         } catch (SettingNotFoundException e) {
         }

@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Copyright (C) 2013 Slimroms Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.chroma;
+package com.android.settings.mallow;
 
 import com.android.internal.logging.MetricsLogger;
 

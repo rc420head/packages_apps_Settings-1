@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Copyright (C) 2012 The CyanogenMod Project
  * Copyright (C) 2014 SlimRoms Project
  *
@@ -28,48 +28,7 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
 import android.provider.Settings;
-    private void updateDisplayRotationPreferenceDescription() {
-        if (mDisplayRotationPreference == null) {
-            return;
-        }
-        PreferenceScreen preference = mDisplayRotationPreference;
-        StringBuilder summary = new StringBuilder();
-        Boolean rotationEnabled = Settings.System.getInt(getContentResolver(),
-                Settings.System.ACCELEROMETER_ROTATION, 0) != 0;
-        int mode = Settings.System.getInt(getContentResolver(),
-                Settings.System.ACCELEROMETER_ROTATION_ANGLES,
-                DisplayRotation.ROTATION_0_MODE|DisplayRotation.ROTATION_90_MODE
-                |DisplayRotation.ROTATION_270_MODE);
 
-        if (!rotationEnabled) {
-            summary.append(getString(R.string.display_rotation_disabled));
-        } else {
-            ArrayList<String> rotationList = new ArrayList<String>();
-            String delim = "";
-            if ((mode & DisplayRotation.ROTATION_0_MODE) != 0) {
-                rotationList.add(ROTATION_ANGLE_0);
-            }
-            if ((mode & DisplayRotation.ROTATION_90_MODE) != 0) {
-                rotationList.add(ROTATION_ANGLE_90);
-            }
-            if ((mode & DisplayRotation.ROTATION_180_MODE) != 0) {
-                rotationList.add(ROTATION_ANGLE_180);
-            }
-            if ((mode & DisplayRotation.ROTATION_270_MODE) != 0) {
-                rotationList.add(ROTATION_ANGLE_270);
-            }
-            for (int i = 0; i < rotationList.size(); i++) {
-                summary.append(delim).append(rotationList.get(i));
-                if ((rotationList.size() - i) > 2) {
-                    delim = ", ";
-                } else {
-                    delim = " & ";
-                }
-            }
-            summary.append(" " + getString(R.string.display_rotation_unit));
-        }
-        preference.setSummary(summary);
-    }
 import com.android.internal.view.RotationPolicy;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -200,4 +159,5 @@ public class DisplayRotation extends SettingsPreferenceFragment implements OnPre
         }
         return false;
     }
+
 }

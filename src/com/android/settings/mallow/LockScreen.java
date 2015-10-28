@@ -1,4 +1,4 @@
-﻿/*
+/*
  *  Copyright (C) 2015 The OmniROM Project
  *
  * This program is free software: you can redistribute it and/or modify
@@ -32,7 +32,6 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
 public class LockScreen extends SettingsPreferenceFragment {
-
     public static final int IMAGE_PICK = 1;
 
     private static final String KEY_WALLPAPER_SET = "lockscreen_wallpaper_set";
@@ -44,7 +43,7 @@ public class LockScreen extends SettingsPreferenceFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.chroma_settings_lockscreen);
+        addPreferencesFromResource(R.xml.lock_screen);
 
         mSetWallpaper = (Preference) findPreference(KEY_WALLPAPER_SET);
         mClearWallpaper = (Preference) findPreference(KEY_WALLPAPER_CLEAR);

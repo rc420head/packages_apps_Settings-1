@@ -89,7 +89,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String ROTATION_ANGLE_90 = "90";
     private static final String ROTATION_ANGLE_180 = "180";
     private static final String ROTATION_ANGLE_270 = "270";
-    
+
     private PreferenceScreen mDisplayRotationPreference;
 
     private FontDialogPreference mFontSizePref;
