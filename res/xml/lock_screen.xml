@@ -34,6 +34,14 @@
              <extra android:name="fragment" android:value="com.android.settings.slim.fragments.LockscreenShortcutsFragment" />
         </PreferenceScreen>
 
+        <PreferenceScreen
+            android:title="@string/lockscreen_targets_message" 
+            android:summary="@string/lockscreen_targets_summary" >
+            <intent
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.cm.LockscreenShortcutsActivity" />
+        </PreferenceScreen>
+
     </PreferenceCategory>
 
     <PreferenceCategory
