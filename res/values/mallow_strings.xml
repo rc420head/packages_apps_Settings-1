@@ -780,4 +780,7 @@
     <string name="systemuituner_title">System tuner</string>
     <string name="systemuituner_summary">Show or hide icons and quicksettings</string>
 
+    <!-- Navigation bar button color -->
+    <string name="navbar_button_tint_title">Button color</string>
+
 </resources>
