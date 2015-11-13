@@ -77,14 +77,14 @@
             android:id="@+id/device_personalization"
             android:title="@string/header_category_personalization" >
 
-        <!-- Mallow tweaks -->
+        <!-- App Ops -->
         <dashboard-tile
-                android:id="@+id/mallow_tweaks"
-                android:title="@string/mallow_tweaks_title"
-                android:fragment="com.android.settings.mallow.MallowTweaks"
-                android:icon="@drawable/ic_settings_mallow"
+                android:id="@+id/app_ops"
+                android:title="@string/app_ops_settings"
+                android:fragment="com.android.settings.applications.AppOpsSummary"
+                android:icon="@drawable/ic_settings_appops" 
                 />
-                
+
         <!-- Layers manager -->
         <dashboard-tile
                 android:id="@+id/bitsyko_layers"
@@ -96,6 +96,13 @@
                     android:targetClass="com.lovejoy777.rroandlayersmanager.menu" />
         </dashboard-tile>
 
+        <!-- Mallow tweaks -->
+        <dashboard-tile
+                android:id="@+id/mallow_tweaks"
+                android:title="@string/mallow_tweaks_title"
+                android:fragment="com.android.settings.mallow.MallowTweaks"
+                android:icon="@drawable/ic_settings_mallow"
+                />
     </dashboard-category>
 
     <!-- DEVICE -->
