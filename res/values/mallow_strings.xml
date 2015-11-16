@@ -706,4 +706,8 @@
     <string name="swap_volume_buttons_title">Swap on rotation</string>
     <string name="swap_volume_buttons_summary">Adjust volume buttons action based on current rotation</string>
 
+    <!-- Recents clear all tasks -->
+    <string name="recents_clear_all_dismiss_all_title">Clear all tasks</string>
+    <string name="recents_clear_all_dismiss_all_summary">Include foreground task when clearing all</string>
+
 </resources>
