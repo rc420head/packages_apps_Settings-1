@@ -54,7 +54,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         // volume music control
         mVolBtnMusicCtrl = (SwitchPreference) findPreference(KEY_VOLBTN_MUSIC_CTRL);
         mVolBtnMusicCtrl.setChecked(Settings.System.getInt(getContentResolver(),
-                Settings.System.VOLUME_MUSIC_CONTROLS, 1) != 0);
+                Settings.System.VOLBTN_MUSIC_CONTROLS, 1) != 0);
         mVolBtnMusicCtrl.setOnPreferenceChangeListener(this);
         try {
             if (Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
@@ -76,7 +76,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             return true;
         } else if (preference == mVolBtnMusicCtrl) {
             Settings.System.putInt(getContentResolver(),
-                    Settings.System.VOLUME_MUSIC_CONTROLS,
+                    Settings.System.VOLBTN_MUSIC_CONTROLS,
                     (Boolean) objValue ? 1 : 0);
             return true;
         }
