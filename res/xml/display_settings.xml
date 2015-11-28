@@ -54,8 +54,15 @@
 
         <PreferenceScreen
                 android:key="display_rotation"
-                android:fragment="com.android.settings.mallow.DisplayRotation"
-                android:title="@string/display_rotation_title" />
+                android:title="@string/display_rotation_title"
+                android:summary="@string/display_rotation_summary"
+                android:fragment="com.android.settings.mallow.DisplayRotation" />
+
+        <PreferenceScreen
+                android:key="expanded_desktop"
+                android:title="@string/power_menu_expanded_desktop"
+                android:summary="@string/expanded_desktop_summary"
+                android:fragment="com.android.settings.applications.ExpandedDesktopPreferenceFragment" />
 
         <ListPreference
                 android:key="night_mode"
@@ -65,11 +72,6 @@
                 android:persistent="false"
                 android:entries="@array/night_mode_entries"
                 android:entryValues="@array/night_mode_values" />
-
-        <PreferenceScreen
-                android:key="expanded_desktop"
-                android:title="@string/power_menu_expanded_desktop"
-                android:fragment="com.android.settings.applications.ExpandedDesktopPreferenceFragment" />
 
         <ListPreference
                 android:key="screen_timeout"
