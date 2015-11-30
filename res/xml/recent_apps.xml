@@ -55,6 +55,12 @@
             android:summary="@string/recents_show_membar_summary"
             android:defaultValue="false" />
 
+        <com.android.settings.mallow.SystemSettingSwitchPreference
+            android:key="recents_full_screen"
+            android:title="@string/recents_full_screen_title"
+            android:summary="@string/recents_full_screen_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
