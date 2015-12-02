@@ -26,6 +26,13 @@
         android:fragment="com.android.settings.mallow.BatteryStyles" />
 
     <PreferenceScreen
+        android:key="button_settings"
+        android:title="@string/button_settings_title"
+        android:summary="@string/button_settings_summary"
+        android:icon="@drawable/floating_action_button"
+        android:fragment="com.android.settings.mallow.ButtonSettings" />
+
+    <PreferenceScreen
         android:key="clock_styles"
         android:title="@string/clock_styles_title"
         android:summary="@string/clock_styles_summary"
@@ -66,12 +73,5 @@
         android:summary="@string/status_bar_summary"
         android:icon="@drawable/ic_sysbar_quicksettings"
         android:fragment="com.android.settings.mallow.StatusBar" />
-
-    <PreferenceScreen
-        android:key="volume_rocker"
-        android:title="@string/volume_rocker_title"
-        android:summary="@string/volume_rocker_summary"
-        android:icon="@drawable/ic_settings_sound"
-        android:fragment="com.android.settings.mallow.VolumeRocker" />
 
 </PreferenceScreen>

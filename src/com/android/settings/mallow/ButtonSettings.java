@@ -28,7 +28,7 @@ import android.provider.Settings.SettingNotFoundException;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-public class VolumeRocker extends SettingsPreferenceFragment implements
+public class ButtonSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
     private static final String VOLUME_ROCKER_WAKE = "volume_rocker_wake";
@@ -39,7 +39,7 @@ public class VolumeRocker extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.volume_rocker);
+        addPreferencesFromResource(R.xml.button_settings);
 
         // volume rocker wake
         mVolumeRockerWake = (SwitchPreference) findPreference(VOLUME_ROCKER_WAKE);
