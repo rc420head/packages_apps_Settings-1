@@ -776,8 +776,8 @@
     <string name="trigger_bottom_title">Trigger height</string>
     <string name="trigger_bottom_summary">Adjust the height of the trigger area</string>
 
-    <!-- SystemUI tuner -->
-    <string name="systemuituner_title">SystemUI tuner</string>
+    <!-- System tuner -->
+    <string name="systemuituner_title">System tuner</string>
     <string name="systemuituner_summary">Show or hide icons and quicksettings</string>
 
 </resources>
