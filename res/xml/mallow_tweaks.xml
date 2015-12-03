@@ -29,7 +29,7 @@
         android:key="button_settings"
         android:title="@string/button_settings_title"
         android:summary="@string/button_settings_summary"
-        android:icon="@drawable/ic_settings_memory"
+        android:icon="@drawable/ic_settings_storage"
         android:fragment="com.android.settings.mallow.ButtonSettings" />
 
     <PreferenceScreen
