@@ -18,21 +18,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <!-- App sidebar -->
     <PreferenceScreen
         android:key="app_sidebar"
         android:fragment="com.android.settings.mallow.AppSidebar"
         android:title="@string/app_sidebar_title"
-        android:layout="@layout/preference_mallow_appbar" 
-        />
+        android:summary="@string/app_sidebar_summary" />
 
-    <!-- Gesture anywhere -->
     <PreferenceScreen
         android:key="gesture_anywhere"
         android:fragment="com.android.settings.gestureanywhere.GestureAnywhereSettings"
         android:title="@string/gesture_anywhere_title"
-        android:layout="@layout/preference_mallow_gesture" 
-        />
+        android:summary="@string/gesture_anywhere_summary" />
 
     <PreferenceCategory
         android:key="category_dtts_options"

@@ -434,10 +434,11 @@
     <string name="adb_notify">USB debugging notify</string>
     <string name="adb_notify_summary">Display a notification when USB debugging is connected</string>
 
-    <!-- Gesture Anywhere -->
-    <string name="gesture_anywhere_title">Gesture Anywhere</string>
-    <string name="gesture_anywhere_enabled_title">Gesture Anywhere</string>
-    <string name="gesture_anywhere_enabled_summary">Enable the Gesture Anywhere feature</string>
+    <!-- Gesture anywhere -->
+    <string name="gesture_anywhere_title">Gesture anywhere</string>
+    <string name="gesture_anywhere_summary">Screen gestures to perform tasks</string>
+    <string name="gesture_anywhere_enabled_title">Gesture anywhere</string>
+    <string name="gesture_anywhere_enabled_summary">Enable the Gesture anywhere feature</string>
     <string name="gesture_anywhere_position_title">Loction</string>
     <string name="gesture_anywhere_position_left">Left edge</string>
     <string name="gesture_anywhere_position_right">Right edge</string>
@@ -494,13 +495,14 @@
     <!-- Lock screen rotation -->
     <string name="display_lockscreen_rotation_title">Lock screen</string>
 
-    <!-- Battery Bar -->
-    <string name="battery_icon">Battery icon style</string>
+    <!-- Battery bar -->
+    <string name="battery_bar_title">Battery bar</string>
+    <string name="battery_bar_summary">Display and customize battery bar</string>
+    <string name="battery_icon_title">Battery icon style</string>
     <string name="battery_not_title">Battery icon in notifications</string>
     <string name="battery_not_summary">Battery icon will show up where the clear all button shows up</string>
     <string name="battery_bar_location">Battery bar location</string>
     <string name="battery_bar_color">Battery bar color</string>
-    <string name="battery_bar">Battery Bar</string>
     <string name="battery_bar_summary">Battery bar position and color customization</string>
     <string name="battery_bar_style_title">Battery bar style</string>
     <string name="battery_bar_thickness_title">Battery bar thickness</string>
@@ -745,7 +747,7 @@
 
     <!-- App sidebar -->
     <string name="app_sidebar_title">App sidebar</string>
-    <string name="app_sidebar_summary">Trigger apps using spinner fly wheel</string>
+    <string name="app_sidebar_summary">Trigger apps using spinner wheel</string>
     <string name="app_sidebar_enable_title">Enable App Sidebar</string>
     <string name="app_sidebar_enable_summaryOn">App Sidebar is enabled</string>
     <string name="app_sidebar_enable_summaryOff">App Sidebar is disabled</string>
