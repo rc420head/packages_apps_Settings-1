@@ -22,11 +22,6 @@
         android:key="navigation_bar"
         android:title="@string/navigation_bar_category" >
 
-        <SwitchPreference
-            android:key="kill_app_longpress_back"
-            android:title="@string/kill_app_longpress_back"
-            android:summary="@string/kill_app_longpress_back_summary" />
-
         <com.android.settings.mallow.SystemSettingSwitchPreference
             android:key="navigation_bar_show"
             android:title="@string/navbar_enable_bar"

@@ -33,7 +33,6 @@ import com.android.settings.SettingsPreferenceFragment;
 public class NavigationBar extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
-    private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
     private static final String DIM_NAV_BUTTONS = "dim_nav_buttons";
     private static final String DIM_NAV_BUTTONS_TIMEOUT = "dim_nav_buttons_timeout";
     private static final String DIM_NAV_BUTTONS_ALPHA = "dim_nav_buttons_alpha";
@@ -41,7 +40,6 @@ public class NavigationBar extends SettingsPreferenceFragment implements
     private static final String DIM_NAV_BUTTONS_ANIMATE_DURATION = "dim_nav_buttons_animate_duration";
     private static final String DIM_NAV_BUTTONS_TOUCH_ANYWHERE = "dim_nav_buttons_touch_anywhere";
 
-    private SwitchPreference mKillAppLongPressBack;
     private SwitchPreference mDimNavButtons;
     private SlimSeekBarPreference mDimNavButtonsTimeout;
     private SlimSeekBarPreference mDimNavButtonsAlpha;
@@ -54,13 +52,6 @@ public class NavigationBar extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.navigation_bar);
-
-        // kill-app long press back
-        mKillAppLongPressBack = (SwitchPreference) findPreference(KILL_APP_LONGPRESS_BACK);
-        mKillAppLongPressBack.setOnPreferenceChangeListener(this);
-        int killAppLongPressBack = Settings.Secure.getInt(getContentResolver(),
-                KILL_APP_LONGPRESS_BACK, 0);
-        mKillAppLongPressBack.setChecked(killAppLongPressBack != 0);
 
         // SlimDim
         mDimNavButtons = (SwitchPreference) findPreference(DIM_NAV_BUTTONS);
@@ -153,12 +144,7 @@ public class NavigationBar extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mKillAppLongPressBack) {
-            Settings.System.putInt(getActivity().getContentResolver(),
-                Settings.Secure.KILL_APP_LONGPRESS_BACK,
-                    ((Boolean) newValue) ? 1 : 0);
-            return true;
-        } else if (preference == mDimNavButtons) {
+        if (preference == mDimNavButtons) {
             Settings.System.putInt(getActivity().getContentResolver(),
                 Settings.System.DIM_NAV_BUTTONS,
                     ((Boolean) newValue) ? 1 : 0);
