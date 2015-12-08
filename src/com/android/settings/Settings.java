@@ -118,10 +118,7 @@ public class Settings extends SettingsActivity {
     public static class WriteSettingsActivity extends SettingsActivity { /* empty */ }
     public static class AppDrawOverlaySettingsActivity extends SettingsActivity { /* empty */ }
     public static class AppWriteSettingsActivity extends SettingsActivity { /* empty */ }
-<<<<<<< HEAD
     public static class DisplayRotationActivity extends SettingsActivity { /* empty */ }
     public static class MallowTweaksActivity extends SettingsActivity { /* empty */ }
-=======
     public static class BlacklistSettingsActivity extends SettingsActivity { /* empty */ }
->>>>>>> 95d09fb... Add back blacklist settings.
 }
