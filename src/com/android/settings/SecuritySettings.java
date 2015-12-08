@@ -114,7 +114,6 @@ public class SecuritySettings extends SettingsPreferenceFragment
 
     private static final int MY_USER_ID = UserHandle.myUserId();
 
-    private PackageManager mPM;
     private DevicePolicyManager mDPM;
     private SubscriptionManager mSubscriptionManager;
 
@@ -136,7 +135,6 @@ public class SecuritySettings extends SettingsPreferenceFragment
     private boolean mIsPrimary;
 
     private Intent mTrustAgentClickIntent;
-
     private Preference mOwnerInfoPref;
 
     @Override
@@ -164,7 +162,6 @@ public class SecuritySettings extends SettingsPreferenceFragment
 
     private static int getResIdForLockUnlockScreen(Context context,
             LockPatternUtils lockPatternUtils) {
-        // Add options for lock/unlock screen
         int resid = 0;
         if (!lockPatternUtils.isSecure(MY_USER_ID)) {
             if (lockPatternUtils.isLockScreenDisabled(MY_USER_ID)) {
@@ -204,8 +201,6 @@ public class SecuritySettings extends SettingsPreferenceFragment
         }
         addPreferencesFromResource(R.xml.security_settings);
         root = getPreferenceScreen();
-        // Add package manager to check if features are available
-        PackageManager pm = getActivity().getPackageManager();
 
         // Add options for lock/unlock screen
         final int resid = getResIdForLockUnlockScreen(getActivity(), mLockPatternUtils);
@@ -876,4 +871,5 @@ public class SecuritySettings extends SettingsPreferenceFragment
             return keys;
         }
     }
+
 }
