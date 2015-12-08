@@ -15,6 +15,27 @@
 -->
 <resources>
 
+   <!-- Dashboard Styles:
+    *** android:background - will change the background of said style.
+    *** android:textColorPrimary - will change the title text color.
+    *** android:colorAccent - will change the dashboard tile icon tint. 
+    -->
+    <style name="Dashboard">
+    <!--<item name="android:background">#HEX</item>-->
+    </style>
+    <style name="DashboardContainer">
+    <!--<item name="android:background">#HEX</item>-->
+    </style>
+    <style name="DashboardCategory">
+    <!--<item name="android:background">#HEX</item>-->
+    <!--<item name="android:textColorPrimary">#HEX</item>-->
+    </style>
+    <style name="DashboardTile">
+    <!--<item name="android:background">#HEX</item>-->
+    <!--<item name="android:textColorPrimary">#HEX</item>-->
+    <!--<item name="android:colorAccent">#HEX</item>-->
+    </style>
+
     <style name="floating_action_button">
         <item name="android:layout_width">@dimen/fab_size</item>
         <item name="android:layout_height">@dimen/fab_size</item>
