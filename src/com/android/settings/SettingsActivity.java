@@ -360,15 +360,11 @@ public class SettingsActivity extends Activity
             ProcessStatsSummary.class.getName(),
             DrawOverlayDetails.class.getName(),
             WriteSettingsDetails.class.getName(),
-<<<<<<< HEAD
             DisplayRotation.class.getName(),
-            MallowTweaks.class.getName()
-=======
+            MallowTweaks.class.getName(),
             com.android.settings.cyanogenmod.PrivacySettings.class.getName(),
             BlacklistSettings.class.getName()
->>>>>>> 95d09fb... Add back blacklist settings.
     };
-
 
     private static final String[] LIKE_SHORTCUT_INTENT_ACTION_ARRAY = {
             "android.settings.APPLICATION_DETAILS_SETTINGS"
