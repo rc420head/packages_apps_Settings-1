@@ -57,7 +57,7 @@
         android:key="notification_drawer"
         android:title="@string/notification_drawer_title"
         android:summary="@string/notification_drawer_summary"
-        android:icon="@drawable/ic_sysbar_quicksettings"
+        android:icon="@drawable/ic_settings_interface"
         android:fragment="com.android.settings.mallow.NotificationDrawer" />
 
     <PreferenceScreen
@@ -92,7 +92,7 @@
         android:key="systemuituner"
         android:title="@string/systemuituner_title"
         android:summary="@string/systemuituner_summary"
-        android:icon="@drawable/ic_systemui_tuner" >
+        android:icon="@drawable/ic_sysbar_quicksettings" >
         <intent
             android:action="android.intent.action.MAIN"
             android:targetPackage="com.android.systemui"
