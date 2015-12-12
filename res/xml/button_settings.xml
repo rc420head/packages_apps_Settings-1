@@ -22,6 +22,18 @@
         android:key="category_wakeup_options"
         android:title="@string/wakeup_options_title" >
 
+        <com.android.settings.mallow.SecureSettingSwitchPreference
+            android:key="kill_app_longpress_back"
+            android:title="@string/kill_app_longpress_back"
+            android:summary="@string/kill_app_longpress_back_summary"
+            android:defaultValue="false" />
+
+        <com.android.settings.mallow.SystemSettingSwitchPreference
+            android:key="swap_volume_buttons"
+            android:title="@string/swap_volume_buttons_title"
+            android:summary="@string/swap_volume_buttons_summary"
+            android:defaultValue="true"/>
+
         <SwitchPreference
             android:key="volume_rocker_wake"
             android:summary="@string/volume_rocker_wake_summary"
@@ -33,12 +45,6 @@
             android:summary="@string/volbtn_music_controls_summary"
             android:persistent="false"
             android:defaultValue="true" />
-
-        <com.android.settings.mallow.SystemSettingSwitchPreference
-            android:key="swap_volume_buttons"
-            android:title="@string/swap_volume_buttons_title"
-            android:summary="@string/swap_volume_buttons_summary"
-            android:defaultValue="true"/>
 
     </PreferenceCategory>
 
