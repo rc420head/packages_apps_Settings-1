@@ -51,8 +51,6 @@ import com.android.settings.R;
 import com.android.internal.logging.MetricsLogger;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
-import com.android.settings.utils.CMDProcessor;
-import com.android.settings.utils.Helpers;
 import com.android.settings.mallow.util.AppMultiSelectListPreference;
 import com.android.settings.mallow.SeekBarPreferenceCHOS;
 
